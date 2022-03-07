@@ -23,7 +23,7 @@ export {log, logIt};
 const log = logger.createLogger();
 const logIt = (
   message: string,
-  severity: Severity = Severity.INFO,
+  severity: Severity = DEBUG,
   toConsole: boolean = false,
 ) => {
   const d = Date.now();
@@ -42,7 +42,7 @@ const logIt = (
 };
 
 if (__DEV__) {
-  log.setSeverity('info');
+  log.setSeverity('debug');
 } else {
   log.setSeverity('error');
 }
