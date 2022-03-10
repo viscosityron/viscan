@@ -10,11 +10,16 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.16.1",
     "@react-navigation/native": "^6.0.8",
     "@types/react-native-vector-icons": "^6.4.10",
+    "axios": "^0.26.0",
     "prop-types": "^15.8.1",
     "react": "17.0.2",
     "react-native": "0.67.2",
+    "react-native-device-info": "^8.5.0",
+    "react-native-encrypted-storage": "^4.0.2",
+    "react-native-fs": "^2.19.0",
     "react-native-logs": "^4.0.1",
     "react-native-orientation-locker": "^1.4.0",
     "react-native-rectangle-scanner": "^1.0.10",
