@@ -615,18 +615,15 @@ export default class Thing extends PureComponent<IProps, IState> {
     );
   }
   renderDocumentDisplay() {
-    //log.debug('InvoiceScanner: renderDocumentDisplay()');
-    // const screenWidth = Dimensions.get('screen').width;
-    // const screenHeight = Dimensions.get('screen').height;
+    log.debug('InvoiceScanner: renderDocumentDisplay()');
+    const screenWidth = Dimensions.get('screen').width;
+    const screenHeight = Dimensions.get('screen').height;
 
     const request = (
       <SafeAreaView>
         <Image
-          // reh
-          width={500}
-          height={500}
-          // width={screenWidth}
-          // height={screenHeight}
+          width={screenWidth}
+          height={screenHeight}
           source={{uri: this.state.imageCachePath}}
         />
         <View style={styles.buttonRightContainer}>
